@@ -69,8 +69,16 @@
     gap: 3vw 2.5vw;
     padding: 0 0 3vw;
   }
-
+  
   .card {
     padding: 3vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-container {
+    grid-template-rows: repeat(auto-fit, min-content);
+    grid-template-columns: 1fr;
+    padding: 0 3vw 3vw 0;
   }
 }
