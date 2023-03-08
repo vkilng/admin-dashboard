@@ -3,7 +3,7 @@ const sidebar = document.querySelector('.sidebar');
 
 menuButton.addEventListener('click', () => {
     sidebar.classList.toggle('show');
-    console.log('event listener 1 triggered');
+    // console.log('event listener 1 triggered');
 })
 
 document.addEventListener('click', (e) => {
@@ -11,7 +11,6 @@ document.addEventListener('click', (e) => {
         && !e.target.classList.contains('sidebar')
         && e.target !== menuButton) {
         sidebar.classList.remove('show');
-        console.log(e.target.className);
     }
-    console.log('event listener 2 triggered');
+    // console.log('event listener 2 triggered');
 })

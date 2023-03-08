@@ -313,6 +313,49 @@ body {
   color: grey;
 }
 
+/* footer */
+footer {
+  background-color: #27272a;
+  color: white;
+  padding: 1vw 4vw;
+  gap: 0.8vw;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+footer a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  width: 2vw;
+  height: 2vw;
+}
+
+footer img:hover {
+  animation: wiggly 2s infinite;
+}
+
+@keyframes wiggly {
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(1080deg) scale(1);
+  }
+}
+
 /*scrollbar*/
 ::-webkit-scrollbar {
   width: 0.5vw;
